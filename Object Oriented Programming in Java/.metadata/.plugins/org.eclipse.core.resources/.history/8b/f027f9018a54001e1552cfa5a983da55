@@ -1,0 +1,373 @@
+package Practice;
+
+//import java.util.Scanner;
+//
+//public class Practice {
+
+//	 	static double average(double num1, double num2, double num3) {
+//		double avg = (num1+num2+num3)/3;
+//		return avg;
+//	}
+//	
+//	static int calculateOdd(int num) {
+//		int sum = 0;
+//		
+//		for(int i=0; i<=num; i++) {
+//			if(i%2==1) {
+//				 sum = sum + i;
+//			}
+//			
+//		}
+//		return sum;
+//	}
+//
+//	public static void main(String[] args) {
+//		
+//		Scanner sc = new Scanner (System.in);
+//		System.out.print("Enter num1: ");
+//		double num1 = sc.nextInt();
+//		System.out.print("Enter num2: ");
+//		double num2 = sc.nextInt();
+//		System.out.print("Enter num3: ");
+//		double num3 = sc.nextInt();
+//
+//		double avg = average(num1,num2,num3);
+//		System.out.println("The average is "+avg);
+//		
+//		sc.close();
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter num: ");
+//		int num = sc.nextInt();
+//		
+//		int odd = (calculateOdd(num));
+//		System.out.println(odd);
+//	}	
+//	
+//}
+
+
+//import java.util.Scanner;
+//
+//public class Practice {
+//
+//    static int calculateOdd(int num) {
+//        int sum = 0;
+//
+//        for (int i = 1; i <= num; i++) {
+//            if (i % 2 != 0) { // Check for odd numbers
+//                sum = sum + i;
+//            }
+//        }
+//        return sum;
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter num: ");
+//        int num = sc.nextInt();
+//
+//        int oddSum = calculateOdd(num);
+//        System.out.println("Sum of odd numbers from 1 to " + num + " is: " + oddSum);
+//
+//        sc.close();
+
+//
+//import java.util.Scanner;
+//
+//public class Practice {
+//	
+//	static int isGreater(int a, int b) {
+//		if(a>b) {
+//			return a;
+//			}
+//		else {
+//			return b;
+//		}
+//		
+//	}
+//	
+//	public static void main(String[] args) {
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter a value: ");
+//		int a = sc.nextInt();
+//		System.out.print("Enter b value: ");
+//		int b = sc.nextInt();
+//		
+//		int result = isGreater(a,b);
+//		System.out.println(result);
+//
+//import java.util.Scanner;
+//
+//public class Practice {
+//
+//    static double circumferenceCalculate(int radius) {
+//        double circumference = 2 * Math.PI * radius;
+//        return circumference;
+//    }
+
+//    public static void main(String[] args) {
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter radius: ");
+//        int radius = sc.nextInt();
+//
+//        double result = circumferenceCalculate(radius);
+//        System.out.println("The circumference of the circle with radius " + radius + " is: " + result);
+//
+//        sc.close();
+
+
+import java.util.Scanner;
+
+public class Practice {
+	
+//	static int findGreatestDivisiors(int a, int b) {
+//		if(b==0)
+//			return a;
+//		return findGreatestDivisiors(b, a % b);
+//		
+//}
+	
+	
+	
+//	 static double calculatePower(double x, int n) {
+//	        double result = 1.0;
+//
+//	        for (int i = 1; i <= n; i++) {
+//	            result *= x;
+//	        }
+//
+//	        return result;
+//	    }
+	 
+	 
+	 
+//	static String vote(int age) {
+//		if(age>=18) {
+//			String vote = "eligible to vote"; 
+//			return vote;
+//		}
+//		else {
+//			String vote = "not eligible to vote";
+//			return vote;
+//		}
+//	}
+	
+	
+
+	
+  public static void main(String[] args) {
+	  
+	  
+//	  String words = ("abcdefabcgi");
+//	  System.out.println(words.length());
+//	  
+	
+	
+
+	  int i = 0;
+	  do {
+	    System.out.println(i);
+	    i++;
+	  }
+	  while (i < 5);
+
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+//	  int a = 2;
+//	  int b = 2;
+//	  int sum = 0;
+//	  
+//	  for(int i = 0; i<=a; i++) {
+//		  sum = a + i;
+//	  }
+//	  System.out.println(sum);
+//	  
+	  
+
+	  
+	  
+//	  String s = "3";
+//	  int g = 4 + Integer.parseInt(s);
+//	  System.out.println(g);
+//	  
+//	  
+//	  double y = 10.00;
+//	  int z = (int)y;
+//	  System.out.println(z);
+//	  
+//	  
+//	  int x = 3;
+//	  double d = x;
+//	  System.out.println(d);
+	  
+//	  Scanner sc = new Scanner(System.in);
+//	  System.out.print("Enter your age: ");
+//	  int age = sc.nextInt();
+//	  
+//	  String vote = vote(age);
+//	  System.out.println(vote);
+	  
+
+//	  int positive = 0;
+//	  int negative = 0;
+//	  int zeros = 0;
+//	  
+//	  while(true) {
+//		  Scanner sc = new Scanner(System.in);
+//		  System.out.print("Enter num: ");
+//		  float user = sc.nextFloat();
+//		  
+//		  if(user > 0) {
+//			  positive++;
+//		  }
+//		  else if(user < 0) {
+//			  negative++;
+//		  }
+//		  else {
+//			  zeros++;
+//		  }
+//		  if (user==0)break;
+//	  }
+//	  
+//	  System.out.println("positive numbers are: "+positive);
+//	  System.out.println("negative numbers are: "+negative);
+//	  System.out.println("zeros numbers are: "+zeros);
+	  
+	  
+//	  Scanner sc = new Scanner(System.in);
+//
+//      System.out.print("Enter the base (x): ");
+//      double x = sc.nextDouble();
+//
+//      System.out.print("Enter the exponent (n): ");
+//      int n = sc.nextInt();
+//
+//      double power = calculatePower(x, n);
+//
+//      System.out.println(x + " raised to the power of " + n + " is " + power);
+//	  
+//	  
+
+//	  Scanner sc = new Scanner(System.in);
+//	  System.out.print("Enter number of a: ");
+//	  int a = sc.nextInt();
+//	  System.out.print("Enter number of b: ");
+//	  int b = sc.nextInt();
+//	  
+//	  
+//	  int result = findGreatestDivisiors(b, a % b);
+//	  System.out.println(result);
+	  
+	  
+//	  Scanner sc = new Scanner(System.in);
+//
+//      System.out.print("Enter the number of terms in the Fibonacci series: ");
+//      int n = sc.nextInt();
+//
+//      System.out.println("Fibonacci series of " + n + " terms:");
+//      int first = 0, second = 1;
+//
+//      for (int i = 1; i <= n; i++) {
+//          System.out.print(first + " ");
+//          int next = first + second;
+//          first = second;
+//          second = next;
+//      }
+
+	  
+//	  Scanner sc = new Scanner(System.in);
+//      System.out.print("Enter IBAN number: ");
+//      String user = sc.nextLine();
+//
+//      String expectedIBAN = "PKHBIL00";
+//
+//      if (user.length() == 24 && user.startsWith(expectedIBAN)) {
+//          System.out.println("True");
+//      } else {
+//          System.out.println("False");
+//      }
+//	  
+	  
+
+	  
+//	  if(user.length() ==8) {
+//		 if(user.equals(code)) {
+//			 System.out.print("True");
+//		 }
+//	  }
+//	  else {
+//		  user = "False";
+//		  System.out.print(user);
+//	  }
+//	  
+	  
+	  
+//	  if (user.equals(counCode)
+//			  System.out.println("True");
+//		  if (user.equals(bankCode)) 
+//			  if (user.equals(userBankNum)) 
+//				  System.out.println("True");
+//	
+		  
+	  
+//	  else
+//		  System.out.println("False");
+	  
+	  
+	  
+	  // Switch Program
+	  
+//	  Scanner sc = new Scanner(System.in);
+//	  System.out.print("Enter num1: ");
+//	  int num1 = sc.nextInt();
+//	  System.out.print("Enter num2: ");
+//	  int num2 = sc.nextInt();
+//	  System.out.print("Enter operation number: ");
+//	  int op = sc.nextInt();
+//	  
+//	  switch(op) {
+//	  case 1 = System.out.println(num1 + num2);
+//	  break;
+//	  }
+//	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    }
+}
+
+    

@@ -1,0 +1,173 @@
+package loopsinjava;
+import java.util.Scanner;
+public class loops {
+
+	public static void main(String[] args) {
+		// For loop
+		
+		//for(int i = 0; i < 10; i = i +1) {
+			//System.out.println(i+1);
+		
+		// for while loop
+		
+		//int i = 0;
+		//while (i<11) {
+			//System.out.println(i);
+			//i = i + 1;
+		
+		//Do while loop
+		
+		//int i = 0;
+		//do {
+			//System.out.println(i);
+			//i = i + 1;		
+		//} 
+		//while(i<11);
+		
+		//int n = 4;
+		//int sum = 0;
+		//for(int i = 0; i<=n; i++) {
+			 //sum = sum + i;
+		//}
+		//System.out.print(sum);
+		
+		// Table
+		
+		//Scanner sc = new Scanner(System.in);
+		//System.out.print("Enter num: ");
+		//int n = sc.nextInt();
+		
+		//for(int i = 1; i<11; i++) {
+			//int x = i * n;
+			//System.out.println(n+ "X"+ i + "=" + x);
+		//}
+		
+	
+		  //Scanner scanner = new Scanner(System.in);
+
+		  //System.out.print("Enter num of x: ");
+		  //int x = scanner.nextInt();
+		  
+		  //System.out.print("Enter num of y: ");
+		  //int y = scanner.nextInt();
+		  
+		  //System.out.print("The sum is " + (x+y));
+	
+	
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter num: ");
+//		int n = sc.nextInt();
+//		
+//		for(int i = 0; i < n; i++) {
+//			if (i%2==0) {
+//				System.out.println(i);
+//			}
+//		}
+//		sc.close();
+//		
+//		char var1 = 20;
+//		int var2 = 30;
+//		float sum1 = var1 + var2;
+//		System.out.println(sum1);;
+		
+//		int i = 0;
+//		while(i<11){
+//			System.out.println(i);
+//			i = i + 1;
+//		}
+		
+//		int i = 0;
+//		do {
+//			System.out.println(i);
+//			i = i + 1;		
+//		}
+//		while (i<11);
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter num: ");
+//		int num = sc.nextInt();
+//		
+//		int sum = 0;
+//		
+//		for(int i = 0; i<=num; i++ ) {
+//			sum = sum + i;
+//		}
+//		System.out.println(sum);
+		
+//		for(int i = 1; i<num; i++) {
+//			long fact = num*i;
+//			System.out.println("Fact is "+ fact);
+//		}
+//		for(int i = 0; i<=20; i++) {
+//			if (i % 3==0) continue;{
+//			if (i<=10)
+//				
+//			System.out.println(i);
+//				
+//			}
+//		
+//
+//		}
+		
+		// while loop Practice
+		
+//		int i = 0;
+//		while (i <= 20) {
+//			i++;
+//			if (i % 3==0) continue;
+//				System.out.println(i);
+//			//i++;
+//			}
+//		System.out.println("Out of loop "+i);
+//		
+		
+		// FactorialProgram
+			
+//		int input;
+//		long fact = 1;
+//		int i;
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter num for fact: ");
+//		input = sc.nextInt();
+//		
+//		i = 1;
+//		while(i <= input) {
+//			fact = fact * i;
+//			i++;
+//			System.out.println(fact);
+//		}
+//		System.out.println("Fact of "+ input +" is " + fact);
+//		
+//	
+		
+		
+//		int n = 5;
+//		for(int i = 0; i < n; i++) {
+//			for(int j = 0; j < i; j++) {
+//				System.out.println("Hello " + "jth times " + j);			
+//			}
+//		}
+		
+//		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		double amount = 1;
+//		double sum = 0;
+//		int i = 0;
+//		double avg = 0;
+//		while(i < amount) {
+//			System.out.print("Enter your recept amount: ");
+//			 amount = sc.nextDouble();
+//			 sum = sum + amount;
+//			 avg = sum/i;
+//			 i++;
+//		}
+//		System.out.println("Your total amount is: " + sum);
+//		System.out.println("Your total recepts are: " + i);
+//		System.out.println("The Average of your amount is: " + avg);
+//		sc.close();
+//		
+	}
+}

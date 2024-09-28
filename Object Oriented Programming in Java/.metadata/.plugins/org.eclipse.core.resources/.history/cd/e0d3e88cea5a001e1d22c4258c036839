@@ -1,0 +1,522 @@
+package FunctionAndMethods;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class FunctionAndMethods {
+	
+	
+ //	static String ibanChecker(String check) {
+//		if (check.length()==24) {
+//			if (check =="PK" && check == "12" && check =="HBIL") {
+//				return check;
+//			}
+//		}
+//		else {
+//			System.out.println("Invalid IBAN number");
+//		}
+//		return check;
+//	}
+
+	
+
+//	public static void MyFunction(String name) {
+//		System.out.println("Your name is "+name);
+//		return;
+//	}
+	
+//	public static void add(int num1,int num2) {
+//		int sum = num1 + num2;
+//		System.out.println("Sum is "+sum);
+//		return;
+//	}
+	
+//	public static int add(int num1,int num2) {
+//		int sum = num1 + num2;
+//		return sum;
+//	}
+	
+//	public static int multiply(int num1,int num2) {
+//		return num1*num2;
+//	}
+	
+	
+	// For Factorial
+	
+//	public static void calculateFactorial(int var) {
+//		
+//		int factorial = 1;
+//		
+//		if(var<0) {
+//			System.out.println("Invalid number");
+//			return;
+//		}
+//		for (int i=var; i>=1; i--) {
+//			factorial = factorial * i;
+//		}
+//		System.out.println(factorial);
+//		return;
+//	}
+//	
+	
+	
+	
+//	 static int method1(int x) {
+//		  return x*2 - 1;
+//		}
+//
+//	static int method2() {
+//		 int a = 3;
+//		 int b = method1(a) + method1(2);
+//		 return b;
+//		}
+	
+	
+
+//	int add() {
+//		int addNum = 10 + 20;
+//		return addNum;
+//	}
+//	
+//	int sub() {
+//		int subNum = add() + 20;
+//		return subNum;
+//	}
+//	
+//	 int divide() {
+//		int div = sub() / 5;
+//		return div;
+//	}
+//	
+	
+	// Find Gen in simple level
+	
+//	String findGen(String g) {
+//		
+//		String result = "";
+//		int startIndex = g.indexOf("ATG");
+//		if (startIndex == -1) {
+//			return "";
+//		}
+//		int stopIndex = g.indexOf("TAA",startIndex+3);
+//		if (stopIndex == -1) {
+//			return "";
+//		}
+//		result = g.substring(startIndex,stopIndex+3);
+//		return result;
+//	}
+	
+	
+	// Find Gen Using loop and multiple of 3
+	
+//	String findGene(String s) {
+//		int startIndex = s.indexOf("ATG");
+//		int currentIndex = s.indexOf("TAA",startIndex + 3);
+//		while (currentIndex != -1) {
+//			if ((currentIndex - startIndex) % 3 == 0){
+//				return s.substring(startIndex, currentIndex + 3);
+//			}
+//			else {
+//				currentIndex = s.indexOf("TAA", currentIndex + 1);
+//			}
+//		}
+//		return "";
+//	}
+	
+	
+	//Find Gene Using Three Stop codons
+	
+//	int findStopCodons(String dnaStr, int startIndex, String stopCodon) {
+//		int currentIndex = dnaStr.indexOf(stopCodon, startIndex + 3);
+//		while(currentIndex != -1) {
+//			int diff = currentIndex - startIndex;
+//			if(diff % 3 == 0) {
+//				return currentIndex;
+//			}
+//			else {
+//				currentIndex = dnaStr.indexOf(stopCodon, currentIndex + 1);
+//			}
+//		}
+//		return dnaStr.length();
+//	}
+//	
+//	
+//	String findGene(String dna) {
+//		int startIndex = dna.indexOf("ATG");
+//		if(startIndex == -1) {
+//			return "";
+//		}
+//		int taaIndex = findStopCodons(dna,startIndex,"TAA");
+//		int tagIndex = findStopCodons(dna,startIndex,"TAG");
+//		int tgaIndex = findStopCodons(dna,startIndex,"TGA");
+//		int temp = Math.min(taaIndex, tagIndex);
+//		int minIndex = Math.min(temp, tgaIndex);
+//		if(minIndex == dna.length()) {
+//			return "";
+//		}
+//		return dna.substring(startIndex, minIndex + 3);
+//	}
+	
+	
+	// Find Gene Using or And 
+	
+//	int findStopCodons(String dnaStr, int startIndex, String stopCodon) {
+//		int currentIndex = dnaStr.indexOf(stopCodon, startIndex + 3);
+//		while(currentIndex != -1) {
+//			int diff = currentIndex - startIndex;
+//			if(diff % 3 == 0) {
+//				return currentIndex;
+//			}
+//			else {
+//				currentIndex = dnaStr.indexOf(stopCodon, currentIndex + 1);
+//			}
+//		}
+//		return -1;
+//	}
+//	
+//	
+//	String findGene(String dna) {
+//		int startIndex = dna.indexOf("ATG");
+//		if(startIndex == -1) {
+//			return "";
+//		}
+//		int taaIndex = findStopCodons(dna,startIndex,"TAA");
+//		int tagIndex = findStopCodons(dna,startIndex,"TAG");
+//		int tgaIndex = findStopCodons(dna,startIndex,"TGA");
+//		int minIndex = 0;
+//		if(taaIndex == -1 || (tgaIndex != -1 && tgaIndex < taaIndex)) {
+//			minIndex = tgaIndex;
+//		}
+//		else {
+//			minIndex = taaIndex;
+//		}
+//		if(minIndex == -1 || (tagIndex != -1 && tagIndex < minIndex)) {
+//			minIndex = tagIndex;
+//		}
+//		if(minIndex == -1) {	
+//			return "";
+//		}
+//		return dna.substring(startIndex, minIndex + 3);
+//}
+//	
+	
+	
+	// Find All Gene
+	
+//	
+//	int findStopCodons(String dnaStr, int startIndex, String stopCodon) {
+//		int currentIndex = dnaStr.indexOf(stopCodon, startIndex + 3);
+//		while(currentIndex != -1) {
+//			int diff = currentIndex - startIndex;
+//			if(diff % 3 == 0) {
+//				return currentIndex;
+//			}
+//			else {
+//				currentIndex = dnaStr.indexOf(stopCodon, currentIndex + 1);
+//			}
+//		}
+//		return -1;
+//	}
+//	
+//	
+//	String findGene(String dna,int where) {
+//		int startIndex = dna.indexOf("ATG",where);
+//		if(startIndex == -1) {
+//			return "";
+//		}
+//		int taaIndex = findStopCodons(dna,startIndex,"TAA");
+//		int tagIndex = findStopCodons(dna,startIndex,"TAG");
+//		int tgaIndex = findStopCodons(dna,startIndex,"TGA");
+//		int minIndex = 0;
+//		if(taaIndex == -1 || (tgaIndex != -1 && tgaIndex < taaIndex)) {
+//			minIndex = tgaIndex;
+//		}
+//		else {
+//			minIndex = taaIndex;
+//		}
+//		if(minIndex == -1 || (tagIndex != -1 && tagIndex < minIndex)) {
+//			minIndex = tagIndex;
+//		}
+//		if(minIndex == -1) {	
+//			return "";
+//		}
+//		return dna.substring(startIndex, minIndex + 3);
+//}
+//	
+//	
+//	void printAllGenes(String dna) {
+//		int startIndex = 0;
+//		while(true) {
+//			String currentGene = findGene(dna , startIndex);
+//			if (currentGene.isEmpty()) {
+//				break;
+//			}
+//			System.out.println(currentGene);
+//			startIndex = dna.indexOf(currentGene, startIndex) + currentGene.length();
+//		}
+//	}
+//	
+//	
+//	void testOn(String dna) {
+//		System.out.println("Testing printAllGenes on " + dna);
+//		printAllGenes(dna);
+//	}
+//	
+//	
+//	void test() {
+//		//testOn("ATGATCTAATTTATGCAACGGTGAAGA");
+//		testOn("AATGCTAACTAGCTGACTAAT");
+//		testOn("");
+//	}
+	
+	
+	
+	// Now this program to get all genes
+	
+	
+//	int findStopCodons(String dnaStr, int startIndex, String stopCodon) {
+//		int currentIndex = dnaStr.indexOf(stopCodon, startIndex + 3);
+//		while(currentIndex != -1) {
+//			int diff = currentIndex - startIndex;
+//			if(diff % 3 == 0) {
+//				return currentIndex;
+//			}
+//			else {
+//				currentIndex = dnaStr.indexOf(stopCodon, currentIndex + 1);
+//			}
+//		}
+//		return -1;
+//	}
+//	
+//	
+//	String findGene(String dna,int where) {
+//		int startIndex = dna.indexOf("ATG",where);
+//		if(startIndex == -1) {
+//			return "";
+//		}
+//		int taaIndex = findStopCodons(dna,startIndex,"TAA");
+//		int tagIndex = findStopCodons(dna,startIndex,"TAG");
+//		int tgaIndex = findStopCodons(dna,startIndex,"TGA");
+//		int minIndex = 0;
+//		if(taaIndex == -1 || (tgaIndex != -1 && tgaIndex < taaIndex)) {
+//			minIndex = tgaIndex;
+//		}
+//		else {
+//			minIndex = taaIndex;
+//		}
+//		if(minIndex == -1 || (tagIndex != -1 && tagIndex < minIndex)) {
+//			minIndex = tagIndex;
+//		}
+//		if(minIndex == -1) {	
+//			return "";
+//		}
+//		return dna.substring(startIndex, minIndex + 3);
+//}
+//	
+//	
+//	ArrayList<String> getAllGenes(String dna) {
+//		ArrayList<String> geneList = new ArrayList<String>();
+//		int startIndex = 0;
+//		while(true) {
+//			String currentGene = findGene(dna , startIndex);
+//			if (currentGene.isEmpty()) {
+//				break;
+//			}
+//			geneList.add(currentGene);
+//			startIndex = dna.indexOf(currentGene, startIndex) + currentGene.length();
+//		}
+//		return geneList;
+//	}
+//	
+//	
+//	void testOn(String dna) {
+//		System.out.println("Testing printAllGenes on " + dna);
+//		ArrayList<String> genes = getAllGenes(dna);
+//		for(String g : genes) {
+//			System.out.println(g);
+//		}
+//		
+//	}
+//	
+//	
+//	void test() {
+//		//testOn("ATGATCTAATTTATGCAACGGTGAAGA");
+//		testOn("AATGCTAACTAGCTGACTAAT");
+//		testOn("AAGTTAAATGGTATAA");
+//		testOn("");
+//	}
+//	
+	
+	
+
+	
+//	public void findAbc(String input) {
+//	    int index = input.indexOf("abc");
+//	    while (true) {
+//	        if (index == -1) {
+//	            break;
+//	        }
+//	        String found = input.substring(index+1, index+4);
+//	        System.out.println(found);
+//	        index = input.indexOf("abc", index+4);
+//	    }
+//	}
+//	   public void test() {
+//		   //findAbc("abcd");
+//		   findAbc("abcdabc");
+//	}
+	
+	
+	
+//	int findIndex(String input) {
+//		int index = input.indexOf("Abc");
+//		if(index != -1) {
+//			return index;
+//		}
+//		return -1;
+//	}
+//	
+//	void test() {
+//		String words = "AbcdAbcf";
+//		System.out.println(findIndex(words));
+//	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	
+//	
+//	ArrayList<String> myMethod(int user){
+//		ArrayList<String> myList = new ArrayList<String>(user);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		for(int i = 0; i < user; i++) {
+//			System.out.print("Enter list elements: ");
+//			String name = sc.nextLine();
+//			
+//			myList.add(name);
+//		}
+//		return myList;
+//	}
+		
+	
+	String add(int x , int y = 3) {
+		return
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+//		FunctionAndMethods fm = new FunctionAndMethods();
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter list size: ");
+//		int size = Integer.parseInt(sc.nextLine());
+//		ArrayList<String> result = fm.myMethod(size);
+//		System.out.println(result);
+//		System.out.println("Program works");
+	
+		
+		
+		
+//		String gen = fm.findGen(word);
+//		System.out.println("The codin " + word);
+//		System.out.println("The Gene From codin " + gen);
+//		word = word.toLowerCase();
+//		System.out.println(word);
+		
+		
+		
+		
+		
+		
+		
+//		FunctionAndMethods fm = new FunctionAndMethods();
+//		
+//		int result = fm.divide();
+//		System.out.println(result);
+		
+
+		
+		
+//		int result2 = method2();
+//		System.out.println(result2);
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter your name: ");
+//		String name = sc.nextLine();
+//		
+//		MyFunction(name);
+		
+		
+//		int num1=2;
+//		int num2=2;
+		
+		//int sum = add(num1,num2);
+		//System.out.println("Sum is "+ sum);
+		
+//		System.out.println("The mult is "+ multiply(num1,num2));
+		
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter number for Fact: ");
+//		int var = sc.nextInt();
+//		
+//		calculateFactorial(var);
+		
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter number for IBAN: ");
+//		String check = sc.nextLine();
+//		
+//		
+//		
+//		
+//		String result = ibanChecker(check);
+//		System.out.println(result);
+		
+		
+		
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter size: ");
+//		int size = sc.nextInt();
+//		
+//		int number[] = new int[size];
+//		
+//		for(int i=0; i<size; i++) {
+//			System.out.print("Enter numbers: ");
+//			number[i] = sc.nextInt();
+//		}
+//		
+//		System.out.print("Enter element for found: ");
+//		int x = sc.nextInt();
+//		
+//		int result = linearSearch(number[], x);
+//		for(int i=0; i<number.length; i++) {
+//			if(number[i] == result)
+//				System.out.println(x +" found at index "+ i);
+//		}
+//		
+		
+
+		
+	}
+
+}

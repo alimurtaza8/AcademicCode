@@ -1,0 +1,79 @@
+package oopclasses;
+
+abstract class Bank{
+	public String name;
+	public int ID;
+	
+//	abstract public void currentAccount();
+//	abstract public void savingAccount();
+	abstract public String toString();
+}
+
+class CurrentAccount extends Bank{
+	private String accountHolderName;
+	private int accID;
+	private int pinCode;
+	private float balance;
+	public final int SIZE = 100;
+	public int[] accounts;
+	
+	CurrentAccount(String accounHolderName, int accID, int pinCode, float balance){
+		this.accountHolderName = accounHolderName;
+		this.accID = accID;
+		this.pinCode = pinCode;
+		this.balance = balance;
+		accounts = new int [SIZE];
+	}
+	
+	public void currentAccount(int userID) {
+		for(int i=0; i<accounts.length; i++) {
+			accounts[i] = -1;
+		}
+		if(userID == this.ID) {
+			System.out.println("Welcome to Current Account");
+			int i=0;
+			while(accounts[i] != -1) {
+				i++;
+			}
+			accounts[i] = userID;
+			this.balance += 500.0;
+		}	
+	}
+	
+	public String getAccountName() {
+		return this.accountHolderName;
+	}
+	
+	public int getID() {
+		return this.accID;
+	}
+	
+	public int getPinCode() {
+		return this.pinCode;
+	}
+	
+	public float balance() {
+		return this.balance;
+	}
+	
+	public String toString() {
+		return "Account name is " + getAccountName() + " ID is " + getID()
+		+ " " + balance();
+	}
+
+}
+
+
+
+public class BankAccount {
+
+	public static void main(String[] args) {
+		
+		CurrentAccount person1 = new CurrentAccount("P1",101,1010,1000);
+		System.out.println(person1.currentAccount(person1.getID()));
+		System.out.println(person1.toString());
+//		currentAccount(person1.getID());
+
+	}
+
+}

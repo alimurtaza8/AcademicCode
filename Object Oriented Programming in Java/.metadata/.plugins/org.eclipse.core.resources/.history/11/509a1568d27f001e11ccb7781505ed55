@@ -1,0 +1,30 @@
+package staticandfinal;
+
+class StaticExample{
+	static private String name;
+	static private int noOfObjects;
+	
+	StaticExample(String name, int noOfObjects){
+		this.name = name;
+		this.noOfObjects = noOfObjects;
+	}
+	
+	public String toString() {
+		return "The name is " + name + " and noOfObjects is " + noOfObjects;
+	}
+	
+}
+
+public class TestStaticKeyword {
+
+	public static void main(String[] args) {
+
+		StaticExample st = new StaticExample("AA",0);
+		System.out.println("The static variable is " + StaticExample.name);
+		System.out.println("The static variable is " + StaticExample.noOfObjects);
+
+		
+		
+	}
+
+}

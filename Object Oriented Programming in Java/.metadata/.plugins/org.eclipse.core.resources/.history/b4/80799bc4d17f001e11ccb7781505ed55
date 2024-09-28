@@ -1,0 +1,10 @@
+package staticandfinal;
+
+public class TestStaticKeyword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

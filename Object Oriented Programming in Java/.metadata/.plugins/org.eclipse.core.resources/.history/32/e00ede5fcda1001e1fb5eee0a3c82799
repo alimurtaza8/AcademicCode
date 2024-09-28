@@ -1,0 +1,32 @@
+package loopsinjava;
+
+import java.util.*;
+
+public class TestBookExamples {
+
+	public static void main(String[] args) {
+		
+		System.out.println("hi");
+		
+		
+//		int x = 10;
+//		while (x > 0)
+//			
+//		x++;
+//		System.out.println("x is " + x);
+		
+		
+//		Scanner input = new Scanner(System.in);
+//		int number, max;
+//		number = input.nextInt();
+//		max = number;
+//		while (number != 0) {
+//			number = input.nextInt();
+//				if (number > max)
+//					max = number;
+//		}
+//			System.out.println("max is " + max);
+//			System.out.println("number " + number);
+		}
+		
+}
