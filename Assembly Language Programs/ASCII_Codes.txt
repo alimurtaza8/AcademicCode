@@ -1,0 +1,19 @@
+ASCII Code in KeyBoard
+
+ASCII: American  Standered Code For Information Interchange
+
+Capital Alphabets: 
+A = 65, B = 66 ........ Z = 99
+
+Small Alphabets: 
+a = 91, b = 92 ......... z = 122
+
+Numbers: 
+0 = 48, 1 = 49 .......... 9 = 57
+
+
+Next Line: 
+10
+
+Carrige Return :
+13
